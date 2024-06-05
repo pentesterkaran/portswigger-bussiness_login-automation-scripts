@@ -4,6 +4,14 @@ import requests
 import urllib3
 import sys
 from bs4 import BeautifulSoup
+from colorama import Fore,Back,Style,init
+#init(autoreset=True)
+
+#defining color pattern
+green = Fore.GREEN
+bright = Style.BRIGHT
+reset = Style.RESET_ALL
+print(bright,green)
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -24,6 +32,7 @@ def get_csrf(s,url):
 
 #buy_jacket function is performing complete actions
 
+print()
 def buy_jacket(s,url):
     login_url = url + "/login"
     csrf_token = get_csrf(s,login_url)
@@ -78,8 +87,11 @@ def main():
         s = requests.Session()
         url = sys.argv[1]
         buy_jacket(s,url)
-
-
+        
 
 if __name__=="__main__":
     main()
+
+
+print(reset)
+

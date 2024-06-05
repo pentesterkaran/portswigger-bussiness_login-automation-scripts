@@ -4,6 +4,15 @@ import requests
 import sys
 import urllib3
 from bs4 import BeautifulSoup
+from colorama import Fore,Back,Style,init
+#init(autoreset=True)
+
+#defining color pattern
+green = Fore.GREEN
+bright = Style.BRIGHT
+reset = Style.RESET_ALL
+print(bright,green)
+
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -69,3 +78,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+print(reset)
