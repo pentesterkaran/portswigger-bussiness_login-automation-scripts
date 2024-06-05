@@ -1,12 +1,20 @@
-# About Repo
-#### This is my scripts that I code for portswigger Business logic vulnerabilities labs, yes while writing this scripts I come to know some new concepts for example I come to know how to proxy your python request through burpsuite which make easy for you to debug the script.
+# About
 
-#### You can use them, May be in some scenario you have to alter some changes in scripts . So I hardly suggest to understand scripts before runnning on target .
+![logo](https://github.com/pentesterkaran/portswigger-bussiness_login-automation-scripts/main/logo/logooo.png)
 
-##                     Happy Hacking 💀
+These are python script made with [Request](https://pypi.org/project/requests/)and[Beautifulsoup](https://pypi.org/project/beautifulsoup4/) lib. Netx provides you a fully interactive shell. 
+You can use this Python scripts to solve [Portswigger Labs](https://portswigger.net/web-security/all-labs) where you have to just copy and paste the url of particular lab according to script.
+you can match the script with lab by reading comment in scripts
 
-
-##### Important : Always first start burp suite because requests have to go through burpsuite. 
-
-
-###### " test.py is a script that i use to try some changes on scripts so this is not for your use it is completely useless for you "
+# Functions
+ * request and beautifulsoup Lib Development
+ * user friendly 
+ * All in one solution
+ * Colorful Output
+ 
+# Usage 
+```sh
+sudo git clone https://github.com/pentesterkaran/portswigger-bussiness_login-automation-scripts.git
+pip3 install -r requirements.txt
+python3 script1.py <lab-url>
+```
