@@ -19,6 +19,7 @@ sudo git clone https://github.com/pentesterkaran/portswigger-bussiness_login-aut
 ```sh
 pip3 install -r requirements.txt
 ```
+* Not forgot to open Burpsuite Bcz I redirect all request through burp proxy which make very easy for user to debug the script
 ```sh
 python3 script1.py <lab-url>
 ```
